@@ -7,7 +7,7 @@
  * @version 1.0
 **/
 
-// test comment 
+
 class HTTPRequest {
 
     private $host;
