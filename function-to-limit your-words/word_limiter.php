@@ -16,7 +16,7 @@ define("STRING_DELIMITER", " ");
  * @return: String
  */
 function word_limiter($str, $limit = 10) {
-    
+    $str = strip_tags($str); // Updated from Ivan Dimov
     if (stripos($str, STRING_DELIMITER)) {
         $ex_str = explode(STRING_DELIMITER, $str);
         if (count($ex_str) > $limit) {
